@@ -1,4 +1,118 @@
+.header {
+    position: relative;
+    display: flex;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgTwHxZQ4yvBqOCKpvBfaFariwub8nGk0aw&s);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+button:hover {
+    background-color: rgb(176, 176, 176);
+}
+.logo {
+    position: relative;
+    display: inline-block;
+    font-size: 90px;
+    background-size: cover;
+    background-position: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+.logo::before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -40px;
+    right: -40px;
 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgTwHxZQ4yvBqOCKpvBfaFariwub8nGk0aw&s);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    border: 3px solid rgb(0, 0, 0);
+    z-index: 0;
+}
 .Hero {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYlsfwbuMLO2NWOxm7OLzGnqCAG8zTyaN9rg&s);
+    height: 300px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+    display: flex;
+    padding: 0 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.testimonial {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.testimonial h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.testimonial-box {
+    max-width: 600px;
+    padding: 30px;
+    background: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(147, 147, 147, 0.5);
+}
+
+.quote {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.author {
+    font-weight: bold;
+    color: #00aaff;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #00aaff;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.6;
 }
